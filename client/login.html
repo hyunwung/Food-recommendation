@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content=":: 로그인 페이지" />
+    <meta property="og:description" content=":: 로그인을 진행해주세요."/>
+    <meta property="og:image" content="../static/img/logo.png"/>
+
+    <link href="./css/index.css" rel="stylesheet">
+    <title>오늘의 밥상 로그인</title>
+</head>
+<body>
+    <div class="container-main">
+        <img src="./image/logo.png" alt="logo" class="logo">
+        <form id="login_form" action="./index.html">
+            <!-- container -->
+            <div id="container">
+                <!-- join_content -->
+                <div class="login_content">
+                    <!-- 아이디, 비밀번호 입력 -->
+                    <div class="row_group">
+                        <div class="login_row">
+                            <h3 class="join_title">
+                                <label for="username">아이디</label>
+                            </h3>
+                            <span class="ps_box">
+                                <input type="text" id="username" name="username" class="int" title="ID" maxlength="20">
+                            </span>
+                            <span class="error_next_box">이 부분에 alert 메시지를 줄 예정입니다.</span>
+                        </div>
+
+                        <div class="login_row">
+                            <h3 class="login_title">
+                                <label for="password">비밀번호</label>
+                            </h3>
+                            <span class="ps_box">
+                                <input type="password" id="pswd1" name="password" class="int" title="비밀번호 입력" maxlength="20">
+                            </span>
+                            <span class="error_next_box">이 부분에 alert 메시지를 줄 예정입니다.</span>
+                        </div>
+                    </div>
+                    <!-- // 아이디, 비밀번호 입력 -->
+
+                    <div class="btn_area">
+                        <button type="button" id="btnLogin" class="btn_type" type="submit">
+                            <span>로그인</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- // join_content -->
+            </div>
+            <!-- // container -->
+        </form>
+    </div>
+</body>
+</html>
