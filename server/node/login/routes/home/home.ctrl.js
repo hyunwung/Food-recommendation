@@ -1,24 +1,36 @@
 "use strict";
 
-const dashboard = (req,res) =>{
-    res.render("home/index");
+const User = require("../../src/models/User");
+
+const output={
+    dashboard : (req,res) =>{
+        res.render("home/");
+    },
+    
+    login : (req,res) => {
+        res.render("home/login");
+    },
+    result : (req,res)=>{
+        res.render("home/result");
+    },
+    
+    singup : (req,res)=>{
+        res.render("home/signup");
+    },
 };
-
-const login = (req,res) => {
-    res.render("home/login");
-}
-
-const result = (req,res)=>{
-    res.send("home/result");
-}
-
-const singin = (req,res)=>{
-    res.send("home/signin");
-}
-
+const process = {
+    login:async (req,res)=>{
+        const user = new User(req.body);
+        const response = await user.login();
+        return res.json(response);
+    },
+    signup:async (req,res)=>{
+        const user = new User(req.body);
+        const response = await user.signup();
+        return res.json(response);
+    },
+};
 module.exports = {
-    dashboard,
-    login,
-    result,
-    singin
-}
+    output,
+    process,
+};
