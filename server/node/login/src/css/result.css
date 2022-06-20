@@ -23,16 +23,17 @@ header > h1 {
 }
 
 #resultImg {
-    position:absolute;
-    width:100vw; height:100vh;
-    top:0; left:0;
-    background-image: url("../image/sample4.jpg");
+    background-image: url("../image/1-1.JPG");
+    /* position:absolute; */
+    /* width:100vw; height:100vh;
+    top:0; left:0; */
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity:0.6;
     z-index:1;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .wrap-contents {

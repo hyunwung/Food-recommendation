@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content=":: 결과 페이지" />
+    <meta property="og:description" content=":: 결과를 확인해주세요."/>
+    <meta property="og:image" content="images/logo_nobackground.png"/>
+
+    <title>오늘의 만찬 결과</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="/src/js/result.js"></script>
+    
+    <link href="/src/css/reset.css" rel="stylesheet">
+    <link href="/src/css/result.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrap">
+    <header>
+        <h1><a href="/"></a></h1>
+    </header>
+    <div id="resultImg" class="food1"></div>
+    <!-- wrap-contents -->
+    <div class="wrap-contents">
+        <h3 id="resultName"></h3>
+        <canvas id="canv" width="400" height="200"></canvas>
+        <h2 id="resultMenu">초코</h2>
+    </div>
+     <!-- // wrap-contents -->
+     <p id="reload"><a href="/">다시하기</a></p>
+
+     <footer>
+        <p><strong>만든 사람들</strong> | 항해99 8기 토이프로젝트 2조 : 나유진, 서현웅, 심채운</p>
+     </footer>
+</div>
+</body>
+</html>
