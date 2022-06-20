@@ -1,3 +1,4 @@
+console.log('안뇽')
 class Login {
 
     constructor(form, fields) {
