@@ -21,5 +21,14 @@ class UserStorage{
             }); 
         });
     }
+    static async append(whatfood) {
+        return new Promise((resolve,reject)=>{
+            const query = "select ? from foods;";
+            db.query(query, [whatfood], (err)=>{
+                if (err) reject(`${err}`);
+                else resolve({ success : true });
+            }); 
+        });
+    }
 }
 module.exports = UserStorage;

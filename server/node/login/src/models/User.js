@@ -8,7 +8,6 @@ class User{
     }
     async login() {
         const client = this.body;
-        
         try{
             const user = await UserStorage.getUserInfo(client.id);
         
@@ -31,6 +30,25 @@ class User{
         } catch (err){
             return { success : false, err};
         }
+}
+    async result() {
+        const client = this.body;
+        try{
+            const foods = await UserStorage.append(client);
+        
+        if (foods){
+            if (foods){
+                
+                return { success : true};
+            }
+            return { success : false, msg : "에러1."};
+        }
+        return { success : false, msg : "에러2."};
+    } catch(err){
+        return { success : false, err}
     }
+}
+    
+
 }
 module.exports = User;

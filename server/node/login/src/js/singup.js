@@ -42,5 +42,4 @@ const id = document.querySelector('#username'),
     gender = document.querySelector("#gender"),
     signupBtn = document.querySelector("#btnJoin");
 
-
 signupBtn.addEventListener("click",signup);

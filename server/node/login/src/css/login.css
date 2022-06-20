@@ -27,7 +27,7 @@ body{
     height: 100vh;
     margin-bottom: 10px;
     position: relative;
-    background-image: url("../img/unknown-4.jpg");
+    background-image: url("../image/unknown-4.jpg");
     background-size:45%;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +145,7 @@ h3.join_title > label, h3.login_title > label {
 @media (max-width: 768px) {
     body{
         position: relative;
-        background-image: url("../img/unknown-4.jpg");
+        background-image: url("../image/unknown-4.jpg");
         background-size:cover;
         background-position: center;
         width: 100%;
