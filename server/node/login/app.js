@@ -14,7 +14,7 @@ dotenv.config();
 //라우팅
 const home = require("./routes/home");
 const accessLogStream = require("./src/config/log");
-const { path } = require("app-root-path");
+
 
 //앱 셋팅
 app.set("views","./views");
