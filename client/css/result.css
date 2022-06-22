@@ -150,6 +150,7 @@ canvas {
 #reload > a > span{
     font-size: 80px;
     color: #ddd;
+    text-shadow: 3px 3px 2px  var(--color-black);
     /* background-color: pink; */
 }
 
