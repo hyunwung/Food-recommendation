@@ -1,0 +1,222 @@
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 만찬</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Today's Supper">
+  <meta property="og:title" content="Today's Supper">
+  <meta property="og:description" content="오늘의 날씨 기반으로 메뉴를 추천해주는 웹 서비스입니다.">
+  <meta property="og:image" content="./image/seo_img.jpg">
+  <!-- <meta property="og:url" content=""> -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="Today's Supper">
+  <meta property="twitter:title" content="Today's Supper">
+  <meta property="twitter:description" content="오늘의 날씨 기반으로 메뉴를 추천해주는 웹 서비스입니다.">
+  <meta property="twitter:image" content="./image/seo_img.jpg">
+  <!-- <meta property="twitter:url" content=""> -->
+  <link rel="icon" href="/src/image/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script defer type="text/javascript" src="/src/js/weather.js"></script>
+  <script defer type="text/javascript" src="/src/js/weather2.js"></script>
+  <script defer type="text/javascript" src="/src/js/index.js"></script>
+  
+  <link rel="stylesheet" href="/src/css/common.css" type="text/css">
+  <link rel="stylesheet" href="/src/css/index.css" type="text/css">
+  
+</head>
+<body>
+  <div class="wrap">
+    <div class="k_v">
+      
+      <div class="inner">
+        <header class="header">
+          <div class="logo">
+            <a href="./login"></a>
+          </div>
+            <div id="weather" class="weather_box">
+              <span class="condition"></span>
+              <span class="regien"></span> 
+            </div> 
+          <ul class="main_menu">
+            <li class="login">
+              <a href="./login" target="_blank">
+                <span class="material-symbols-outlined i_login icon">LogOut
+                </span>로그아웃
+              </a>
+            </li>
+            <li class="lang">
+              <div class="kor">한 </div>
+              <p class="block">|</p>
+              <div class="eng">영</div>
+            </li>
+            <!-- <li class="time">
+              <div class="material-icons-two-tone i_sun icon">wb_sunny</div>
+              <div class="material-icons-two-tone i_moon icon">nightlight</div>
+            </li>                                       -->
+          </ul>
+        </header>
+        <main class="main">
+          <div class="main_container">
+            <h4>날씨기반 메뉴추천 웹 서비스</h4>
+            <h1>오늘의 만찬</h1>
+            <h5>지금 먹고싶은 음식을 선택하세요</h5>
+            <ul class="food_box">
+              <li class="k_f">
+                <p><span><a href="./result" id="k_f">한식</a></span></p>
+                <div class="btn" id="k_f"><a href="./result" class="food" id="k_f">클릭하기</a></div>
+              </li>
+              <li class="c_f">
+                <p><span><a href="./result2" id="c_f">중식</a></span></p>
+                <div class="btn" id="c_f"><a href="./result2" class="food" id="c_f">클릭하기</a></div>
+              </li>
+              <li class="j_f">
+                <p><span><a href="./result3" id="j_f">일식</a></span></p>
+                <div class="btn" id="j_f"><a href="./result3" class="food" id="j_f">클릭하기</a></div>
+              </li>
+              <li class="w_f">
+                <p><span><a href="./result4" id="w_f">양식</a></span></p>
+                <div class="btn" id="w_f"><a href="./result4" class="food" id="w_f">클릭하기</a></div>
+              </li>
+              <li class="snack_f">
+                <p><span><a href="./result5" id="snack_f">분식</a></span></p>
+                <div class="btn" id="snack_f"><a href="./result5" class="food" id="snack_f">클릭하기</a></div>
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
+      
+    </div>
+
+    <div class="c_pan"></div>
+
+    <div class="e_v">
+      <div class="inner">
+        <header class="header">
+          <div class="logo">
+            <a href="/"></a>
+          </div>
+            <div id="evweather" class="weather_box">
+              <span class="condition"></span>
+              <span class="regien"></span>
+            </div>
+          <ul class="main_menu">
+            <li class="login">
+              <a href="./login" target="_blank">
+                <span class="material-symbols-outlined i_login">
+                LogOut
+                </span>LogOut
+              </a>
+            </li>
+            <li class="lang">
+              <div class="kor">Kor</div>
+              <p class="block">|</p>
+              <div class="eng">Eng</div>
+            </li>
+            <!-- <li class="time">
+              <div class="material-icons-two-tone i_sun">wb_sunny</div>
+              <div class="material-icons-two-tone i_moon">nightlight</div>
+            </li>                                       -->
+          </ul>
+        </header>
+        <main class="main">
+          <div class="main_container">
+            <h4>Weather-based menu recommendation web service</h4>
+            <h1>Today's Supper</h1>
+            <h5>Please choose the food that you want</h5>
+            <ul class="food_box">
+              <li class="k_f">
+                <p><span id="k_f"><a href="/result" id="k_f"> K Food</a></span></p>
+              </li>
+              <li class="c_f">
+                <p><span id="c_f"><a href="/result" id="c_f"> C Food</a></span></p>
+              </li>
+              <li class="j_f">
+                <p><span id="j_f"><a href="/result" id="j_f"> J Food</a></span></p>
+              </li>
+              <li class="w_f">
+                <p><span id="w_f"><a href="/result" id="w_f"> W Food</a></span></p>
+              </li>
+              <li class="snack_f">
+                <p><span id="snack_f"><a href="/result" id="snack_f"> SNACK</a></span></p>
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+    
+    <div class="bg_box am">
+      <div class="banner banner1_am"></div>
+      <div class="banner banner2_am"></div>
+      <div class="banner banner3_am"></div>
+      <div class="banner banner4_am"></div>
+      <div class="banner banner5_am"></div>
+      <div class="banner banner6_am"></div>
+      <div class="banner banner7_am"></div>
+      <div class="banner banner8_am"></div>
+      <div class="banner banner9_am"></div>
+      <div class="banner banner10_am"></div>
+      <div class="banner banner11_am"></div>
+      <div class="banner banner12_am"></div>
+      <div class="banner banner13_am"></div>
+      <div class="banner banner14_am"></div>
+      <div class="banner banner15_am"></div>
+    </div>
+
+    <div class="bg_box an">
+      <div class="banner banner1_an"></div>
+      <div class="banner banner2_an"></div>
+      <div class="banner banner3_an"></div>
+      <div class="banner banner4_an"></div>
+      <div class="banner banner5_an"></div>
+      <div class="banner banner6_an"></div>
+      <div class="banner banner7_an"></div>
+      <div class="banner banner8_an"></div>
+      <div class="banner banner9_an"></div>
+      <div class="banner banner10_an"></div>
+      <div class="banner banner11_an"></div>
+      <div class="banner banner12_an"></div>
+      <div class="banner banner13_an"></div>
+      <div class="banner banner14_an"></div>
+      <div class="banner banner15_an"></div>
+    </div>
+
+    <div class="bg_box pm">
+      <div class="banner banner1_pm"></div>
+      <div class="banner banner2_pm"></div>
+      <div class="banner banner3_pm"></div>
+      <div class="banner banner4_pm"></div>
+      <div class="banner banner5_pm"></div>
+      <div class="banner banner6_pm"></div>
+      <div class="banner banner7_pm"></div>
+      <div class="banner banner8_pm"></div>
+      <div class="banner banner9_pm"></div>
+      <div class="banner banner10_pm"></div>
+      <div class="banner banner11_pm"></div>
+      <div class="banner banner12_pm"></div>
+      <div class="banner banner13_pm"></div>
+      <div class="banner banner14_pm"></div>
+      <div class="banner banner15_pm"></div>
+    </div>
+
+    <h2 id="clock"></h2>
+    
+  </div>
+
+  </div>
+</body>
+</html>
