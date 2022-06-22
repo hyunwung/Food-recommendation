@@ -23,17 +23,18 @@ header > h1 {
 }
 
 #resultImg {
-    background-image: url("../image/1-1.JPG");
+    /* background-image: url("../image/1-1.JPG"); */
     /* position:absolute; */
     /* width:100vw; height:100vh;
     top:0; left:0; */
     
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity:0.6;
+    
+    overflow: hidden;  */
     z-index:1;
-    overflow: hidden; 
 }
 
 .wrap-contents {

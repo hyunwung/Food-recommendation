@@ -1,0 +1,400 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: pink; */
+  position: relative;
+  overflow: hidden;
+}
+.inner{
+  /* width: 1100px; */
+  height: 100vh;
+  /* background-color: pink; */
+  /* margin: 0 auto; */
+
+  /* opacity: 0.3; */
+  position: relative;
+  /* z-index: 9999; */
+}
+/* kor_ver  한글*/
+.k_v{
+  width: 100vw;
+  height: 100vh;
+  /* display: none; */
+}
+.header{
+  position: relative;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 75px;
+  background-color: rgba(231, 230, 219, 0.4);
+  /* opacity: 0.2; */
+  box-shadow: 0px 0px 15px 0px rgb(235, 234, 234);
+
+}
+
+.logo{
+  background: url(../image/logo_example.png) no-repeat center / contain;
+  width: 300px;
+  height: 75px;
+}
+.logo > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.weather_box{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+}
+#clock{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index:9999;
+
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main_menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.main_menu > li{
+  
+  font-weight: 700;
+  margin: 0 8px;
+  border-radius: 8px;
+}
+.login{}
+.login a{
+  display: block;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.i_login{
+  font-size: 28px;
+}
+.lang{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.kor{
+  padding: 10px;
+  border-radius: 8px;
+
+  background-color: rgba(242, 244, 246, 0.8);
+}
+.eng{
+  color: rgb(240, 237, 237);
+  /* border: 1px solid #000; */
+
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.i_sun{
+  background-color: rgba(242, 244, 246, 0.8);
+  
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+}
+.i_moon{
+  /* background-color: rgba(242, 244, 246, 0.1); */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+}
+.login:hover{
+  background-color: rgb( 242, 244, 246, 0.8 );
+  cursor: pointer;
+}
+.kor:hover{
+  /* background-color: rgba(0, 67, 133); */
+  cursor: pointer;
+  
+}
+.eng:hover{
+  /* background-color: rgba(242, 244, 246, 0.8); */
+  cursor: pointer;
+}
+
+
+
+
+/* main 메인 */
+.main{
+  width: 100%;
+  /* height: 100vh; */
+  text-align: center;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgb(153, 152, 152);
+  /* margin-top: 75px; */
+  /* background-color: blue; */
+}
+.main_container{
+  width: 100%;
+  /* background-color: blue; */
+}
+.main_container > h1{
+  /* color: #fff; */
+  font-size: 100px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.main_container > h4{
+
+  font-size: 28px;
+  font-weight: 600;
+}
+.main_container > h5{
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.food_box{
+  width: 100%;
+  height: 230px;
+
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: pink; */
+}
+.food_box > li{
+  width: calc((100% -40px) / 5);
+  height: 350px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 3px 3px 12px 0px rgba(82, 82, 82, 0.8);
+  margin: 0 10px;
+
+  
+  transform: rotateY(0deg);
+
+  position: relative;
+
+  transition: all 0.5s;
+  background-color: rgba(40, 35, 8, 0.4);
+  
+  
+}
+.food_box > li:hover{
+  border: 3px solid rgba(242, 244, 246, 0.8); 
+  
+}
+.btn{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  /* color: #fff;
+  border-color: #fff; */
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.food_box li:hover .btn{
+  opacity: 1;
+  transform: translateY(0);
+}
+.food_box li .btn:hover{
+  background-color: #333;
+  color: #fff;
+}
+.k_f{
+  
+}
+.k_f:hover{
+  background: url(../image/k_food/img1.jpg) no-repeat center / cover;
+}
+.c_f:hover{
+  background: url(../image/c_food/2-5.jpeg) no-repeat center / cover;
+}
+.j_f:hover{
+  background: url(../image/j_food/3-2.jpg) no-repeat center / cover;
+}
+.w_f:hover{
+  background: url(../image/w_food/4-2.jpg) no-repeat center / cover;
+}
+.snack_f:hover{
+  background: url(../image/snack/img03.jpg) no-repeat center / cover;
+}
+.food_box > li > p{
+  width: 100%;
+  /* background-color: pink; */
+  font-size: 50px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scale(1);
+  transition: font-weight 1s;
+}
+.food_box > li > p > span:hover{
+  font-weight: 800;
+  /* transform: translateY(-50%) scale(1.5); */
+}
+
+
+/* eng_ver */
+.e_v{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+
+.c_pan{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(130, 55, 68);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 99999;
+  transition: all 1.5s;
+}
+.pan_active{
+  left: -100%;
+}
+.bg_box{
+  
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: none;
+}
+.banner1_pm{background: url(../image/background/pm/background_pm_1.jpg) no-repeat center / cover;  display: block;}
+.banner2_pm{background: url(../image/background/pm/background_pm_2.jpg) no-repeat center / cover; }
+.banner3_pm{background: url(../image/background/pm/background_pm_3.jpg) no-repeat center / cover; }
+.banner4_pm{background: url(../image/background/pm/background_pm_4.jpg) no-repeat center / cover; }
+.banner5_pm{background: url(../image/background/pm/background_pm_5.jpg) no-repeat center / cover; }
+.banner6_pm{background: url(../image/background/pm/background_pm_6.jpg) no-repeat center / cover; }
+.banner7_pm{background: url(../image/background/pm/background_pm_7.jpg) no-repeat center / cover; }
+.banner8_pm{background: url(../image/background/pm/background_pm_8.jpg) no-repeat center / cover; }
+.banner9_pm{background: url(../image/background/pm/background_pm_9.jpg) no-repeat center / cover; }
+.banner10_pm{background: url(../image/background/pm/background_pm_10.jpg) no-repeat center / cover; }
+.banner11_pm{background: url(../image/background/pm/background_pm_11.jpg) no-repeat center / cover; }
+.banner12_pm{background: url(../image/background/pm/background_pm_12.jpg) no-repeat center / cover; }
+.banner13_pm{background: url(../image/background/pm/background_pm_13.jpg) no-repeat center / cover; }
+.banner14_pm{background: url(../image/background/pm/background_pm_14.jpg) no-repeat center / cover; }
+.banner15_pm{background: url(../image/background/pm/background_pm_15.jpg) no-repeat center / cover; }
+
+.banner1_am{background: url(../image/background/am/background_am_1.jpg) no-repeat center / cover; }
+.banner2_am{background: url(../image/background/am/background_am_2.jpg) no-repeat center / cover; }
+.banner3_am{background: url(../image/background/am/background_am_3.jpg) no-repeat center / cover; }
+.banner4_am{background: url(../image/background/am/background_am_4.jpg) no-repeat center / cover; }
+.banner5_am{background: url(../image/background/am/background_am_5.jpg) no-repeat center / cover; }
+.banner6_am{background: url(../image/background/am/background_am_6.jpg) no-repeat center / cover; }
+.banner7_am{background: url(../image/background/am/background_am_7.jpg) no-repeat center / cover; }
+.banner8_am{background: url(../image/background/am/background_am_8.jpg) no-repeat center / cover; }
+.banner9_am{background: url(../image/background/am/background_am_9.jpg) no-repeat center / cover; }
+.banner10_am{background: url(../image/background/am/background_am_10.jpg) no-repeat center / cover; }
+.banner11_am{background: url(../image/background/am/background_am_11.jpg) no-repeat center / cover; }
+.banner12_am{background: url(../image/background/am/background_am_12.jpg) no-repeat center / cover; }
+.banner13_am{background: url(../image/background/am/background_am_13.jpg) no-repeat center / cover; }
+.banner14_am{background: url(../image/background/am/background_am_14.jpg) no-repeat center / cover; }
+.banner15_am{background: url(../image/background/am/background_am_15.jpg) no-repeat center / cover; }
+
+.banner1_an{background: url(../image/background/an/background_an_1.jpg) no-repeat center / cover; }
+.banner2_an{background: url(../image/background/an/background_an_2.jpg) no-repeat center / cover; }
+.banner3_an{background: url(../image/background/an/background_an_3.jpg) no-repeat center / cover; }
+.banner4_an{background: url(../image/background/an/background_an_4.jpg) no-repeat center / cover; }
+.banner5_an{background: url(../image/background/an/background_an_5.jpg) no-repeat center / cover; }
+.banner6_an{background: url(../image/background/an/background_an_6.jpg) no-repeat center / cover; }
+.banner7_an{background: url(../image/background/an/background_an_7.jpg) no-repeat center / cover; }
+.banner8_an{background: url(../image/background/an/background_an_8.jpg) no-repeat center / cover; }
+.banner9_an{background: url(../image/background/an/background_an_9.jpg) no-repeat center / cover; }
+.banner10_an{background: url(../image/background/an/background_an_10.jpg) no-repeat center / cover; }
+.banner11_an{background: url(../image/background/an/background_an_11.jpg) no-repeat center / cover; }
+.banner12_an{background: url(../image/background/an/background_an_12.jpg) no-repeat center / cover; }
+.banner13_an{background: url(../image/background/an/background_an_13.jpg) no-repeat center / cover; }
+.banner14_an{background: url(../image/background/an/background_an_14.jpg) no-repeat center / cover; }
+.banner15_an{background: url(../image/background/an/background_an_15.jpg) no-repeat center / cover; }
+
+
+@media (max-width:768px){
+  .logo{
+    width: 150px;
+  }
+  .weather_box{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .main_menu{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .i_login{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .main_container >h1{
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .main_container > h4{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .food_box > li > p{
+    font-size: 35px;
+  }
+}

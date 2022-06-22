@@ -12,6 +12,7 @@
     <link href="./css/login.css" type="text/css" rel="stylesheet">
     <!-- <script defer type="text/javascript" src="/src/js/login.js"></script> -->
     <title>오늘의 만찬 로그인</title>
+    <script defer src="./js/intro.js"></script>
 </head>
 <body>
     <div class="container-main">
@@ -27,7 +28,7 @@
                             <h3 class="join_title">
                                 <label for="username">아이디</label>
                             </h3>
-                            <span class="ps_box">
+                            <span class="ps_box ps_box_id">
                                 <input type="text" id="username" name="username" class="int" title="ID" maxlength="20">
                             </span>
                             <!-- <span class="error_next_box">이 부분에 alert 메시지를 줄 예정입니다.</span> -->
@@ -37,7 +38,7 @@
                             <h3 class="login_title">
                                 <label for="password">비밀번호</label>
                             </h3>
-                            <span class="ps_box">
+                            <span class="ps_box ps_box_pw">
                                 <input type="password" id="pswd1" name="password" class="int" title="비밀번호 입력" maxlength="20">
                             </span>
                             <!-- <span class="error_next_box">이 부분에 alert 메시지를 줄 예정입니다.</span> -->
@@ -49,7 +50,7 @@
                         <button type="button" id="btnLogin" class="btn_type" type="submit">
                             <span>로그인</span>
                         </button>
-                        <button type="button">
+                        <button type="button" id="btnSignin">
                             <a href="./signup.html">회원가입</a>
                         </button>
                     </div>

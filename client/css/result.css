@@ -37,8 +37,8 @@ header > h1 {
 
 .wrap-contents {
     position:absolute;
-    width:360px;
-    height:360px;
+    width:410px;
+    height:410px;
     left:50%; top:50%;
     margin: -180px 0 0 -180px;
     border-radius:50%;
@@ -75,8 +75,9 @@ header > h1 {
     z-index:2;
 } */
 canvas {
-    margin-top:-100px;
+    margin-top: -96px;
     /* border: 1px solid red; */
+    margin-left: 21px;
 }
 #resultName {
     position:absolute;
@@ -131,21 +132,28 @@ canvas {
 } */
 #reload {
     position:fixed;
-    right:0px; bottom:150px;;
+    right:40px; bottom:150px;;
     width:80px; height: 80px;
-    background-color:var(--color-yellow);
+    /* background-color:var(--color-yellow); */
     z-index:3;
 }
 #reload > a {
     text-align: center;
     color:var(--color-black);
-    line-height:80px;
-    font-size: 16px;
+    /* line-height:80px; */
+    font-size: 80px;
     font-weight: 700;
     text-shadow:1px 1px -1px var(--color-black);
-    box-shadow:2px 2px 5px var(--color-black);
+    /* box-shadow:2px 2px 5px var(--color-black); */
     cursor: pointer;
 }
+#reload > a > span{
+    font-size: 80px;
+    color: #ddd;
+    text-shadow: 3px 3px 2px  var(--color-black);
+    /* background-color: pink; */
+}
+
 
 footer {
     position:fixed;
