@@ -5,7 +5,6 @@ const psBoxPw = document.querySelector('.ps_box_pw')
 
 idEl.addEventListener('click',function(){
   idEl.focus();
-  // console.log('11')
 });
 
 
