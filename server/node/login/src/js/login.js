@@ -1,6 +1,5 @@
 "use strict";
 
-// ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 function login(){
     const req = {
         id: id.value,
@@ -32,9 +31,3 @@ const id = document.querySelector('#username'),
 
 
 loginBtn.addEventListener("click",login);
-
-
-// if(form) {
-//     const fields = ['username', 'password']
-//     const validator = new Login(form, fields)
-// }

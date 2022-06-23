@@ -54,6 +54,10 @@ body{
   font-size: 24px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
   
 }
 #clock{
@@ -200,7 +204,7 @@ body{
   width: calc((100% -40px) / 5);
   height: 350px;
   border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 3px 3px 12px 0px rgba(82, 82, 82, 0.8);
   margin: 0 10px;
 

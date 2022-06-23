@@ -75,25 +75,39 @@ h3.join_title > label, h3.login_title > label {
     padding-top:10px;
 }
 .btn_area {
-    width:100%; height:45px;
-    background-color:var(--color-yellow);
+    width:100%; 
+    /* height:45px; */
+    /* background-color:var(--color-yellow); */
 }
 .btn_area > button {
-    width:100%; height:100%;
-    background-color:var(--color-yellow);
+    width:100%; height:45px;
+    background-color:rgb(238 221 117);
     border: 0;
     margin-bottom: 7px;
+    border-radius: 12px;
 }
 .btn_area > button > span {
     font-weight: 500;
     font-size: 18px;
     color: var(--color-black);
+    cursor: pointer;
+    
 }
 .btn_area > button > a {
     font-weight: 500;
     font-size: 18px;
     color: var(--color-black);
 }
+#btnJoin:hover{
+    /* opacity: 1; */
+    background-color: rgb(225,229,61);
+    border: 1px solid #030301;
+}
+#btnSignin:hover{
+    background-color: rgb(225,229,61);
+    border: 1px solid #030301;
+}
+
 @media (max-width: 1024px) {
     #container {
         width: auto;
