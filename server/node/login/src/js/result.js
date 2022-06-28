@@ -3,89 +3,64 @@ const images1 = {
     "1-1.JPG":"감자탕",
     "1-2.JPG":"제육볶음",
     "1-3.JPG":"육회",
-    "1-4.JPG":"비빔밥",
-    "1-5.JPG":"부추전",
-    "1-6.JPG":"두부김치",
-    "1-7.JPG":"돼지수육"
+    "1-4.jpg":"비빔밥",
+    "1-5.jpg":"부추전",
+    "1-6.jpg":"두부김치",
+    "1-7.jpg":"돼지수육"
 }
 const images2 = {
-    "2-1.JPEG":"짬뽕",
-    "2-2.JPEG":"짜장면",
-    "2-3.JPEG":"탕수육",
-    "2-4.JPEG":"깐쇼새우",
-    "2-5.JPEG":"깐풍기",
-    "2-6.JPEG":"구절판",
-    "2-7.JPEG":"볶음밥",
-    "2-8.JPEG":"마파두부",
-    "2-9.JPEG":"군만두",
+    "2-1.jpeg":"짬뽕",
+    "2-2.jpeg":"짜장면",
+    "2-3.jpeg":"탕수육",
+    "2-4.jpeg":"깐쇼새우",
+    "2-5.jpeg":"깐풍기",
+    "2-6.jpeg":"구절판",
+    "2-7.jpeg":"볶음밥",
+    "2-8.jpeg":"마파두부",
+    "2-9.jpeg":"군만두",
 }
 const images3={
-    "3-1.JPG":"오니기리",
-    "3-2.JPG":"스시",
-    "3-3.JPG":"규동",
-    "3-4.PNG":"텐푸라",
-    "3-5.JPG":"카츠동",
-    "3-6.JPG":"타코야키",
-    "3-7.JPG":"장어덮밥",
-    "3-8.JPG":"사케동",
-    "3-9.JPG":"우동",
-    "3-10.JPG":"메밀소바",
+    "3-1.jpg":"오니기리",
+    "3-2.jpg":"스시",
+    "3-3.jpg":"규동",
+    "3-4.png":"텐푸라",
+    "3-5.jpg":"카츠동",
+    "3-6.jpg":"타코야키",
+    "3-7.jpg":"장어덮밥",
+    "3-8.jpg":"사케동",
+    "3-9.jpg":"우동",
+    "3-10.jpg":"메밀소바",
     "3-11.JPEG":"라멘",
-    "3-12.JPG":"오코노미야키",
-    "3-13.PNG":"샤브샤브",
-    "3-14.JPG":"소고기전골",
-    "3-15.JPG":"토리야키",
-    "3-16.JPG":"카레",
+    "3-12.jpg":"오코노미야키",
+    "3-13.png":"샤브샤브",
+    "3-14.jpg":"소고기전골",
+    "3-15.jpg":"토리야키",
+    "3-16.jpg":"카레",
     "3-17.JPEG":"돈까스"
 }
 const images4={
-    "4-1.JPG":"샐러드",
-    "4-2.JPG":"스테이크",
-    "4-3.JPG":"에그스크럼블",
-    "4-4.JPG":"파스타",
-    "4-5.JPG":"리조또",
+    "4-1.jpg":"샐러드",
+    "4-2.jpg":"스테이크",
+    "4-3.jpg":"에그스크럼블",
+    "4-4.jpg":"파스타",
+    "4-5.jpg":"리조또",
 }
 const images5={
-    "5-1.JPG":"떡볶이",
-    "5-2.JPG":"토종순대",
-    "5-3.JPG":"튀김",
-    "5-4.JPG":"라면",
-    "5-5.JPG":"김밥",
-    "5-6.JPG":"오뎅",
-    "5-7.JPG":"찐만두",
-    "5-8.JPG":"비빔면",
-    "5-9.JPG":"호떡",
-    "5-10.JPG":"붕어빵",    
+    "5-1.jpg":"떡볶이",
+    "5-2.jpg":"토종순대",
+    "5-3.jpg":"튀김",
+    "5-4.jpg":"라면",
+    "5-5.jpg":"김밥",
+    "5-6.jpg":"오뎅",
+    "5-7.jpg":"찐만두",
+    "5-8.jpg":"비빔면",
+    "5-9.jpg":"호떡",
+    "5-10.jpg":"붕어빵",    
 }
 // 날짜시간 설정
 const date = new Date();
 const hours = date.getHours();
 
-window.onload = function () {
-    let canvas = document.getElementById("canv");
-    let context = canvas.getContext("2d");
-
-    context.font = "30px sans";
-    context.fillStyle = "white";
-    context.textAlign = "center";
-
-    let string = `오늘의만찬은`;
-
-    let angle = Math.PI * 0.65;
-    let radius = 200;
-
-    context.translate(180, 280);
-    context.rotate(-1.1 * angle / 2);
-
-    for (let i = 0; i < string.length; i++) {
-
-        context.rotate(angle / string.length);
-        context.save();
-        context.translate(0, -1 * radius);
-        context.fillText(string[i], 0, 0);
-        context.restore();
-    }
-};
 
 $(document).ready(function(){
     if(document.querySelector(".food1")){

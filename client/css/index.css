@@ -13,37 +13,41 @@ body{
   height: 100vh;
   /* background-color: pink; */
   /* margin: 0 auto; */
-
   /* opacity: 0.3; */
   position: relative;
   /* z-index: 9999; */
 }
-/* kor_ver  한글*/
 .k_v{
   width: 100vw;
   height: 100vh;
-  /* display: none; */
+.k_v{
+  width: 100vw;
+  height: 100vh;
 }
 .header{
   position: relative;
   z-index: 999;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   width: 100%;
   height: 75px;
+
+  background-color: rgba(255, 251, 232, 0.5);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+
+  padding: 10px 10px;
+
   background-color: rgba(231, 230, 219, 0.4);
   /* opacity: 0.2; */
   box-shadow: 0px 0px 15px 0px rgb(235, 234, 234);
-
 }
 
 .logo{
   background: url(../image/logo_example.png) no-repeat center / contain;
-  width: 300px;
-  height: 75px;
+  width: 250px;
+  height: 55px;
 }
 .logo > a{
   display: block;
@@ -51,15 +55,25 @@ body{
   height: 100%;
 }
 .weather_box{
-  font-size: 24px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
+  height:75px;
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.weather_box > span {
+  font-size: 20px;
+  line-height: 75px;
+  font-weight: 700;
+} 
+=======
     top: 26px;
     left: 50%;
     transform: translateX(-50%);
   
 }
+
 #clock{
   position: absolute;
   bottom: 5%;
@@ -83,7 +97,6 @@ body{
   margin: 0 8px;
   border-radius: 8px;
 }
-.login{}
 .login a{
   display: block;
   padding: 10px;
@@ -189,8 +202,6 @@ body{
 }
 .food_box{
   width: 100%;
-  height: 230px;
-
   position: absolute;
   top: 210%;
   left: 50%;
@@ -370,16 +381,21 @@ body{
 .banner15_an{background: url(../image/background/an/background_an_15.jpg) no-repeat center / cover; }
 
 
+
+@media screen and (max-width: 1024px) {
+  
+
 @media (max-width:768px){
+
   .logo{
     width: 150px;
   }
   .weather_box{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
   }
   .main_menu{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
   }
   .i_login{
@@ -387,14 +403,78 @@ body{
     font-weight: 700;
   }
   .main_container >h1{
-    font-size: 70px;
+    font-size: 55px;
     font-weight: 700;
   }
   .main_container > h4{
     font-size: 18px;
     font-weight: 700;
   }
+  
+  .main_container > h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 30px 0;
+  }
   .food_box > li > p{
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    padding: 0;
+  }
+  .logo{
+    width: 100px;
+  }
+  .weather_box{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .main_menu{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .login > a > span {
+    font-size: 14px;
+  }
+  .food_box{
+    top: 350px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .food_box > li{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 3px 3px 12px 0px rgba(82, 82, 82, 0.8);
+    margin: 10px 0px;
+  }
+  .k_f:hover{
+    background: none;
+  }
+  .c_f:hover{
+    background: none;
+  }
+  .j_f:hover{
+    background: none;
+  }
+  .w_f:hover{
+    background: none;
+  }
+  .snack_f:hover{
+    background: none;
+  }
+  .btn{
+    display: none;
+  }
+  .food_box li:hover{
+    transform: scale(1.15);
+  }
+  #clock{
+    font-size: 14px;
   }
 }

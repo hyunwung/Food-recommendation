@@ -10,7 +10,6 @@ class User{
         const client = this.body;
         try{
             const user = await UserStorage.getUserInfo(client.id);
-        
         if (user){
             if (user.id === client.id && user.psword === client.psword){
                 return { success : true};
@@ -41,11 +40,11 @@ class User{
                 
                 return { success : true};
             }
-            return { success : false, msg : "에러1."};
+            return { success : false, msg : "잘못된 접근 입니다."};
         }
-        return { success : false, msg : "에러2."};
+        return { success : false, msg : "잘못된 접근 입니다."};
     } catch(err){
-        return { success : false, err}
+        return { success : false, msg : "잘못된 접근 입니다."}
     }
 }
     

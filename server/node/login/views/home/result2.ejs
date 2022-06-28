@@ -15,29 +15,56 @@
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="/src/js/result.js"></script>
-    
+    <link rel="icon" href="/src/image/favicon.png" type="image/x-icon">
+    <link href="/src/css/header.css" rel="stylesheet">
     <link href="/src/css/reset.css" rel="stylesheet">
     <link href="/src/css/result.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+    
 </head>
-
 <body>
-<div id="wrap">
-    <header>
-        <h1><a href="/"></a></h1>
-    </header>
-    <div id="resultImg" class="food2"></div>
-    <!-- wrap-contents -->
-    <div class="wrap-contents">
-        <h3 id="resultName"></h3>
-        <canvas id="canv" width="400" height="200"></canvas>
-        <h2 id="resultMenu"></h2>
+    <div id="wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="/"></a>
+            </div>
+                <div id="weather" class="weather_box">
+                    <span class="condition"></span>
+                    <span class="regien"></span> 
+                </div> 
+            <ul class="main_menu">
+                <li class="login">
+                    <a href="./login">
+                        <span class="material-icons">
+                        logout
+                        </span>로그아웃
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div id="resultImg" class="food2"></div>
+        <!-- wrap-contents -->
+        <div class="wrap-contents">
+            <h3 id="resultName">오늘의 만찬은</h3>
+            <!-- <canvas id="canv"></canvas> -->
+            <h2 id="resultMenu">계란후라이 비빔밥 짜장면</h2>
+        </div>
+         <!-- // wrap-contents -->
+         <p id="reload">
+            <a href="/">
+                <span class="material-icons icon">
+                refresh
+                </sp>                
+            </a>
+         </p>
+    
+         <footer>
+            <p><strong>만든 사람들</strong> | 항해99 8기 토이프로젝트 2조 : 나유진, 서현웅, 심채운</p>
+         </footer>
     </div>
-     <!-- // wrap-contents -->
-     <p id="reload"><a href="/">다시하기</a></p>
-
-     <footer>
-        <p><strong>만든 사람들</strong> | 항해99 8기 토이프로젝트 2조 : 나유진, 서현웅, 심채운</p>
-     </footer>
-</div>
 </body>
 </html>
