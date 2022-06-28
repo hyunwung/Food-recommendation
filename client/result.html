@@ -14,6 +14,7 @@
     
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/result.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
@@ -22,30 +23,45 @@
     
 </head>
 <body>
-<div id="wrap">
-    <header>
-        <h1><a href="index.html"></a></h1>
-    </header>
-    <div id="resultImg"></div>
-    <!-- wrap-contents -->
-    <div class="wrap-contents">
-        <h3 id="resultName"></h3>
-        <canvas id="canv" width="400" height="200"></canvas>
-        <h2 id="resultMenu">스테이크</h2>
+    <div id="wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="./login.html"></a>
+            </div>
+                <div id="weather" class="weather_box">
+                    <span class="condition"></span>
+                    <span class="regien"></span> 
+                </div> 
+            <ul class="main_menu">
+                <li class="login">
+                    <a href="./login.html" target="_blank">
+                        <span class="material-icons">
+                        logout
+                        </span>로그아웃
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div id="resultImg" class="food1"></div>
+        <!-- wrap-contents -->
+        <div class="wrap-contents">
+            <h3 id="resultName">오늘의 만찬은</h3>
+            <!-- <canvas id="canv"></canvas> -->
+            <h2 id="resultMenu">계란후라이 비빔밥 짜장면</h2>
+        </div>
+         <!-- // wrap-contents -->
+         <p id="reload">
+            <a href="index.html">
+                <span class="material-icons icon">
+                refresh
+                </sp>                
+            </a>
+         </p>
+    
+         <footer>
+            <p><strong>만든 사람들</strong> | 항해99 8기 토이프로젝트 2조 : 나유진, 서현웅, 심채운</p>
+         </footer>
     </div>
-     <!-- // wrap-contents -->
-     <p id="reload">
-        <a href="index.html">
-            <span class="material-icons icon">
-            refresh
-            </sp>                
-        </a>
-     </p>
-
-     <footer>
-        <p><strong>만든 사람들</strong> | 항해99 8기 토이프로젝트 2조 : 나유진, 서현웅, 심채운</p>
-     </footer>
-</div>
-<script src="js/result.js"></script>
-</body>
+    <script defer src="js/result.js"></script>
+    </body>
 </html>
